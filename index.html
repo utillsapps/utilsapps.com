@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="description" content="Utils Apps — mobile apps for everyday tasks.">
+  <title>Utils Apps — App Developer</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container">
+      <a href="index.html" class="logo">
+        <span class="logo-icon">◆</span>
+        <span>Utils Apps</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#apps">Apps</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="Menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-layout">
+        <div class="hero-content">
+          <p class="hero-badge">Mobile app developer</p>
+          <h1>Simple tools<br>for everyday tasks</h1>
+          <p class="hero-lead">
+            I build clean, focused apps for iOS.
+            No clutter — just what you actually need.
+          </p>
+          <div class="hero-actions">
+            <a href="#apps" class="btn btn-primary">Browse apps</a>
+          </div>
+        </div>
+
+        <div class="hero-visual" aria-hidden="true">
+          <div class="hero-glow hero-glow--green"></div>
+          <div class="hero-glow hero-glow--blue"></div>
+
+          <div class="hero-showcase">
+            <svg class="hero-chart-svg" viewBox="0 0 320 160" fill="none">
+              <path class="hero-chart-path" d="M0 120 C40 100, 80 110, 120 80 S200 40, 240 60 S300 20, 320 30" stroke="url(#chartGrad)" stroke-width="3" stroke-linecap="round"/>
+              <path class="hero-chart-area" d="M0 120 C40 100, 80 110, 120 80 S200 40, 240 60 S300 20, 320 30 V160 H0 Z" fill="url(#areaGrad)"/>
+              <defs>
+                <linearGradient id="chartGrad" x1="0" y1="0" x2="320" y2="0">
+                  <stop offset="0%" stop-color="#4f6ef7"/>
+                  <stop offset="100%" stop-color="#2d9f5a"/>
+                </linearGradient>
+                <linearGradient id="areaGrad" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0%" stop-color="rgba(45,159,90,.12)"/>
+                  <stop offset="100%" stop-color="rgba(45,159,90,0)"/>
+                </linearGradient>
+              </defs>
+            </svg>
+
+            <div class="hero-orbit-ring hero-orbit-ring--outer"></div>
+            <div class="hero-orbit-ring hero-orbit-ring--inner"></div>
+
+            <div class="hero-showcase-center">
+              <img
+                src="assets/my-capital-goals-icon.png"
+                alt=""
+                class="hero-showcase-icon"
+                width="88"
+                height="88"
+              >
+            </div>
+
+            <div class="hero-chip hero-chip--1">
+              <span class="hero-chip-icon">📈</span>
+              <span>Track progress</span>
+            </div>
+            <div class="hero-chip hero-chip--2">
+              <span class="hero-chip-icon">🎯</span>
+              <span>Set goals</span>
+            </div>
+            <div class="hero-chip hero-chip--3">
+              <span class="hero-chip-dot"></span>
+              <span>100% on-device</span>
+            </div>
+
+            <div class="hero-metric hero-metric--1">
+              <span class="hero-metric-value">72%</span>
+              <span class="hero-metric-label">Goal reached</span>
+            </div>
+            <div class="hero-metric hero-metric--2">
+              <span class="hero-metric-value">iOS</span>
+              <span class="hero-metric-label">Native app</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="apps" class="section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Apps</h2>
+          <p>Each app has its own Privacy Policy and Terms and Conditions — linked directly below.</p>
+        </div>
+        <div class="apps-grid">
+          <article class="app-card app-card--featured">
+            <div class="app-card-top">
+              <img
+                src="assets/my-capital-goals-icon.png"
+                alt="My Capital &amp; Goals app icon"
+                class="app-card-icon-img"
+                width="72"
+                height="72"
+              >
+              <div class="app-card-head">
+                <h3>My Capital &amp; Goals</h3>
+                <span class="tag tag--ios">iOS</span>
+              </div>
+            </div>
+            <p class="app-card-desc">
+              Track your capital, set financial goals, and watch your progress grow — all in one clean dashboard.
+            </p>
+            <div class="app-card-legal">
+              <a href="apps/my-capital-goals/privacy.html" class="legal-link legal-link--green">Privacy Policy</a>
+              <a href="apps/my-capital-goals/terms.html" class="legal-link legal-link--green">Terms and Conditions</a>
+            </div>
+            <a href="apps/my-capital-goals/index.html" class="app-card-more">Learn more →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section section-alt">
+      <div class="container about-grid">
+        <div>
+          <h2>About Utils Apps</h2>
+          <p>
+            I'm an independent developer building useful utilities.
+            Privacy, clear design, and reliable performance matter to me.
+          </p>
+        </div>
+        <ul class="about-features">
+          <li>
+            <strong>Privacy</strong>
+            <span>Minimal data collection, full transparency</span>
+          </li>
+          <li>
+            <strong>Simplicity</strong>
+            <span>Interfaces without unnecessary steps</span>
+          </li>
+          <li>
+            <strong>Support</strong>
+            <span>I answer questions and ship updates</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container contact-box">
+        <h2>Contact me</h2>
+        <p>Questions about my apps, policies, or partnerships — drop me a line.</p>
+        <a href="mailto:support@utilsapps.com" class="contact-email">support@utilsapps.com</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Utils Apps. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
