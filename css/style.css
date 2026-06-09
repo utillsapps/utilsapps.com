@@ -920,11 +920,29 @@ img {
   margin-top: 4px;
 }
 
-.app-detail-links {
-  display: flex;
-  gap: 12px;
-  flex-wrap: wrap;
-  margin-top: 24px;
+.app-detail-links .app-contact {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 24px 28px;
+  margin-top: 8px;
+  text-align: center;
+}
+
+.app-contact p {
+  color: var(--text-muted);
+  font-size: .9rem;
+  margin-bottom: 10px;
+}
+
+.app-contact-email {
+  font-size: 1.1rem;
+  font-weight: 700;
+  word-break: break-word;
+}
+
+.app-contact-email:hover {
+  color: var(--accent-hover);
 }
 
 .app-screenshots {
