@@ -17,12 +17,19 @@ function closeNav() {
 }
 
 if (toggle && links) {
-  toggle.addEventListener('click', () => {
+  toggle.addEventListener('click', (e) => {
+    e.stopPropagation();
     setNavOpen(!links.classList.contains('open'));
   });
 
   links.querySelectorAll('a').forEach(link => {
     link.addEventListener('click', closeNav);
+  });
+
+  document.addEventListener('click', (e) => {
+    if (!links.classList.contains('open')) return;
+    if (toggle.contains(e.target) || links.contains(e.target)) return;
+    closeNav();
   });
 
   document.addEventListener('keydown', (e) => {
